@@ -8,8 +8,7 @@
 					$number = get_sub_field('stat_number');
 					$label = get_sub_field('stat_label');
 					?>
-                    <div class="col-6 col-md-3 mb-4 wow zoomInDown"
-                    data-wow-delay="<?php echo $i; ?>s">
+                    <div class="col-6 col-md-3 mb-4">
                         <div class="stat-box">
                             <div class="stat-number fw-bold display-4" data-target="<?php echo esc_attr($number); ?>">
 								<?php echo esc_html($number); ?>
@@ -19,7 +18,6 @@
                             </div>
                         </div>
                     </div>
-                     <?php $i = $i + .2; ?>
 				<?php endwhile;
 			endif;
 			?>
